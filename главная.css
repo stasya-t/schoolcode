@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&family=Marck+Script&family=Stick&family=Train+One&display=swap');
+
+@media screen and (max-width: 850px) {
+    .shelf{
+        background:none;
+    }
+
+    .cover{
+        position:relative;
+        bottom: 1000px;
+    }
+
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header-menu{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        float: none;
+        margin-right: 20px;
+        
+    }
+
+    .header-text{
+        font-size: 10mm;
+    }
+
+    .menu-link{
+        margin-right: 20px;
+    }
+
+    .footer-row{
+        flex-wrap: wrap;
+    }
+    .socials{
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .container{
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+
+
+}
+
+
+/*=========================================================================================*/
+
+
+
+
+
+.shelf {
+    background: url(Рисунок1.png);
+    background-size: contain;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+    
+body {
+    background-image: url(Рисунок10.jpg.png);
+    background-attachment: fixed;
+    background-size: cover;				
+}
+
+.box{
+    color:rgb(41, 26, 12);
+    background-color: rgba(151, 121, 92, 0.747);
+    box-shadow: 0 0 300px rgb(255, 255, 255);
+    padding: 1mm;
+    margin-bottom: 200px;
+}
+
+.header-text{
+font-family: 'Ruslan Display', cursive;
+font-size: calc(1em + 4vw);;
+text-shadow: 0 0 23px rgb(255, 245, 108);
+}
+
+
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Marck Script', cursive;
+    font-size: 8.5mm;
+    text-shadow: 0 0 23px rgb(255, 245, 108);
+}
+
+.menu-item{
+    list-style: none;
+}
+
+.menu-link{
+    color:rgb(41, 26, 12);
+    text-decoration: none;
+}
+
+.menu-link:hover{
+    text-decoration: none;
+    text-shadow: 0 0 15px rgb(255, 0, 0);
+    color: rgb(41, 26, 12);
+}
+
+
+.menu-link:active {
+    text-decoration: none;
+    text-shadow: 0 0 15px rgb(255, 108, 108);
+}
+
+.menu-link:focus {
+    text-decoration: none;
+    text-shadow: 0 0 15px rgb(255, 108, 108);
+}
+.container{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 200px;
+
+}
+.cover{
+
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    bottom: 90px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.cover:hover{
+    position: relative;
+    opacity: 1;
+    transform: scale(1.4);
+    bottom: 120px;
+
+}
+
+footer{
+    background-image: url(footer2_2.png);
+    padding-top: 130px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+
+td{
+    padding: 40px;
+}
+
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-txt{
+    color: white;
+    font-size: 5mm;
+    margin-right: 100px;
+    font-family: "Marck Script";
+    display: flex;
+    float: left;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 50px;
+}
+
+.icon{
+    margin-right: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+
+div.rotate1 {
+    background: url(facebook.png); /* Путь к файлу с исходным рисунком */
+    width: 100px; /* Ширина рисунка */
+    height: 100px; /* Высота рисунка */
+    margin-left: 20px;
+    margin-top: 20px;
+    }
+    
+div.rotate1:hover {
+background: url(facebook_hover.png); /* Путь к файлу с заменяемым рисунком */
+}
+
+div.rotate2 {
+    background: url(instagram.png); /* Путь к файлу с исходным рисунком */
+    width: 100px; /* Ширина рисунка */
+    height: 100px; /* Высота рисунка */
+    margin-left: 20px;
+    margin-top: 20px;
+    }
+    
+div.rotate2:hover {
+background: url(instagram_hover.png); /* Путь к файлу с заменяемым рисунком */
+}
+
+div.rotate3 {
+    background: url(youtube.png);
+    width: 100px; 
+    height: 100px; 
+    margin-left: 20px;
+    margin-top: 20px;
+    }
+    
+div.rotate3:hover {
+background: url(youtube_hover.png);
+}

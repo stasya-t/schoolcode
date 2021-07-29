@@ -1,0 +1,277 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>О нас</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reggae+One&family=Stick&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&family=Marck+Script&family=Kelly+Slab&family=Stick&family=Train+One&display=swap');
+            @media screen and (max-width: 850px){
+                .header{
+                    display: flex;
+                    justify-content: center;  
+                }
+            }
+            #par::first-letter {
+                font-size: 20mm;
+                font-family: "Ruslan Display";
+                color: rgb(255, 178, 115);
+                float: left;
+                margin: -20px 10px -27px 0;
+            }
+            body{
+                background-image: url("дворик1.jpg");
+                background-size: cover;
+                background-attachment: fixed;
+                margin: 0;
+                padding: 0;
+            }
+            .menu{
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            .header-text{
+                font-family: 'Ruslan Display', cursive;
+                font-size: 12mm;
+                margin: 1px;
+            }
+
+            .menu-link{
+                text-decoration: none;
+                font-family: 'Marck Script', cursive;
+                font-size: 7mm;
+                margin-right: 5mm;
+            }
+
+            .menu-link:hover{
+                text-decoration: underline;
+            }
+
+            .box{
+                background-color: rgba(112, 112, 112, 0.514);
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+            .header-box{
+                background-color: rgba(139, 139, 139, 0.644);
+                box-shadow: inset 0 0 30px rgb(255, 245, 219);
+                
+            }
+            .footer-box{
+                background-color: rgba(48, 44, 38, 0.568);
+                box-shadow: inset 0 0 30px rgb(255, 245, 219);
+            }
+            card:hover{
+                background-color: rgba(255, 252, 238, 0.842);
+            }
+            #card_1{
+                text-align: justify;
+                font-size: 5mm;
+            }
+            #card_2{
+                text-align: justify;
+                font-size: 5mm;
+            }
+            #card_3{
+                text-align: justify;
+                font-size: 5mm;
+            }
+            #about1{
+                margin-top: 15px;
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-bottom: 5px;
+            }
+            #art_1 {
+                display: none;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            #art_2 {
+                display: none;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            #art_3 {
+                display: none;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            #plak{
+                margin-bottom: 30px;
+                width: 60%;
+            }
+            .school{
+                font-size: 7mm;
+                text-align: center;
+            }
+            td{
+                padding: 40px;
+            }
+            .footer-row{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .foot-txt{
+                color: white;
+                font-size: 5mm;
+                margin-right: 100px;
+                font-family: "Marck Script";
+                display: flex;
+                float: left;
+            }
+            .socials{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-right: 50px;
+            }
+            .icon{
+                margin-right: 40px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+            }
+            div.rotate1 {
+                background: url(facebook.png); /* Путь к файлу с исходным рисунком */
+                width: 100px; /* Ширина рисунка */
+                height: 100px; /* Высота рисунка */
+                margin-left: 20px;
+                margin-top: 5px;
+                }
+                
+            div.rotate1:hover {
+                background: url(facebook_hover.png); /* Путь к файлу с заменяемым рисунком */
+            }
+            div.rotate2 {
+                background: url(instagram.png); /* Путь к файлу с исходным рисунком */
+                width: 100px; /* Ширина рисунка */
+                height: 100px; /* Высота рисунка */
+                margin-left: 20px;
+                margin-top: 5px;
+                }
+                
+            div.rotate2:hover {
+            background: url(instagram_hover.png); /* Путь к файлу с заменяемым рисунком */
+            }
+            div.rotate3 {
+                background: url(youtube.png); /* Путь к файлу с исходным рисунком */
+                width: 100px; /* Ширина рисунка */
+                height: 100px; /* Высота рисунка */
+                margin-left: 20px;
+                margin-top: 5px;
+                }
+                
+            div.rotate3:hover {
+                background: url(youtube_hover.png); /* Путь к файлу с заменяемым рисунком */
+            }
+        </style> 
+    </head>
+    <body>
+        <div class="box">
+            <div class="header container-fluid" >   
+                <nav class="header-box navbar navbar-expand-lg">
+                    <div class="header-text navbar-brand ms-5 me-5">Об организации</div>
+                    <span class="collapse navbar-collapse d-flex flex-row-reverse me-5">
+                        <div class="menu navbar-nav" id="navbarColor02">
+                            <a class="menu-link nav-item nav-link" href="index.html">Главная</a>
+                            <a class="menu-link nav-item nav-link" href="Об организации.html">О нас</a>
+                        </div>
+                    </span>
+                </nav>
+            </div>
+            <div class="alert alert-dismissible alert-light" id="about1">
+                <p>
+                    <strong class="school">ГБОУ Школа № 1558 имени Росалии де Кастро</strong>
+                </p>
+                <div class="alert-link">
+                    <p>
+                        МЕСТОНАХОЖДЕНИЕ ОБРАЗОВАТЕЛЬНОЙ ОРГАНИЗАЦИИ:
+                        Москва, Чукотский проезд, дом 6
+                    </p>
+                    <p>
+                        КОНТАКТНЫЕ ТЕЛЕФОНЫ:
+                        +7 (495) 472-47-31, +7 (495) 471-23-54, +7 (495) 472-47-30
+                    </p>
+                    <p>
+                        АДРЕСА ЭЛЕКТРОННОЙ ПОЧТЫ:
+                        1558@edu.mos.ru
+                    </p>
+                    <p><strong>
+                        <a href="https://gym1558sv.mskobr.ru/">Официальный сайт школы</a>
+                    </strong></p>
+                </div>
+            </div>
+            
+            
+            <div class="container mt-5">
+                <div class="container-sm">
+                    <div class="row d-flex justify-content-around">
+                        <div class="card border-secondary mb-3" style="max-width: 30rem;" id="card_2">
+                            <div class="card-body">
+                                <p class="card-text" id="par">Миссия Гимназии заключается в том, чтобы посредством содержания образования, ориентированного на диалог культур и партнерство цивилизаций, способствовать формированию здорового, свободного, критически мыслящего человека и гражданина, интегрированного в информационное общество и нацеленного на совершенствование мировых цивилизационных процессов.</p>
+                                Наша цель - воспитание любознательных, знающих, неравнодушных молодых людей, которые помогают делать мир лучше и спокойнее за счет развития взаимопонимания и взаимоуважения между различными культурами. Программа международного сотрудничества способствует тому, чтобы студенты по всему миру становились активными, сочувствующими людьми, которые продолжают учиться всю свою жизнь и понимают, что другие люди, отличающиеся от них, тоже могут быть правы!
+                            </div>
+                        </div>
+                        <div class="card border-secondary mb-3" style="max-width: 30rem;" id="card_1">
+                            <div class="card-body">
+                                <p class="card-text" id="par">Школа участвует в проекте математическая вертикаль. «Математическая вертикаль» – городской образовательный проект, целью которого является многоцелевая предпрофильная подготовка по математике и смежным областям.                                    <p>
+                                    Проект «Математическая вертикаль» предполагает, что каждая школа-участник обеспечивает следующие условия реализации проекта:
+                                    <p>
+                                        <ul type="square">
+                                            <li>учебный план по математике включает в себя: 4-5 часов алгебры, 2-3 часа геометрии, 1-2 часа статистики, 1-2 часа дополнительных занятий по выбору школы;</li>
+                                            <li>в реализации учебного плана участвуют учителя, успешно прошедшие специализированное тестирование и повышение квалификации в ресурсных центрах проекта;</li>
+                                            <li>в школе сформирован класс проекта из числа школьников, успешно прошедших вступительную диагностику.</li>
+                                        </ul>
+                                    </p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card border-secondary mb-3" style="max-width: 65rem;" id="card_1">
+                            <div class="card-body">
+                                <p class="card-text" id="par"> У нас школьники имеют возможность изучить два иностранных языка: испанский и английский. Нагрузка увеличивается постепенно, вначале учащиеся привыкают к одному языку, а после, в пятом классе, начинают изучение второго. При этом уровень знания языков к моменту выпуска из школы будет приравниваться к В2-С1 по международной системе оценивания. </p>
+                                <p>
+                                    Более того, в конце шестого класса учащиеся могут выбрать программу углубленного изучения математики, пройти тест и по его результатам быть определены в математический класс или в один из двух гуманитарных. В конце девятого класса, после сдачи ОГЭ школьники могут выбрать профили, которые будут интересны им для дальнейшего обучения. Профильная программа обширнее обычной, позволяет учащимся погрузиться в выбранный предмет и понять, какой университет им подходит.
+                                </p>
+                                <p> 
+                                    Учащийся может выбрать профильные программы по таким прдметам как:
+                                </p>
+                                    <p>
+                                        <ul type="square">
+                                            <li>Математика</li>
+                                            <li>Информатика</li>
+                                            <li>Русский и литература</li>
+                                            <li>Испанский</li>
+                                            <li>Английский</li>
+                                            <li>История</li>
+                                            <li>Обществознание</li>
+                                        </ul>
+                                    </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <footer class="footer footer-expand-lg">
+                <div class="footer-box p-4 d-flex justify-content-center">
+                    <div class="footer-row">
+                        <div class="foot-txt">
+                            Сайт разработан в 2021 году Ганиной Таисией
+                        </div>            
+                        <div class="socials">
+                            <a href="https://www.facebook.com/gimnasia1558/"> <div class="rotate1"></div></a>
+                            <a href="https://www.instagram.com/instaparliament_1558/"><div class="rotate2"></div></a>
+                            <a href="https://www.youtube.com/c/Гимназия1558РосалияДеКастро/videos"><div class="rotate3"></div></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

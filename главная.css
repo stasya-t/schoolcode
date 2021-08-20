@@ -57,19 +57,9 @@
 /*=========================================================================================*/
 
 
-
-
-
-.shelf {
-    background: url(Рисунок1.png);
-    background-size: contain;
-    margin-top: 200px;
-    margin-bottom: 20px;
-}
     
 body {
-    background-image: url(Рисунок10.jpg.png);
-    background-attachment: fixed;
+    background-image: url(Рисунок_ex.png);
     background-size: cover;				
 }
 
